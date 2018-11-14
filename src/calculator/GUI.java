@@ -342,6 +342,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void btn_addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_addActionPerformed
         this.calculation(Operator.ADDITION);
+        display.negate(false);
     }//GEN-LAST:event_btn_addActionPerformed
 
     private void btn_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_3ActionPerformed

@@ -12,6 +12,7 @@ import javax.swing.JTextField;
  * @author noel.oliveira
  */
 public class Display {
+
     private String digit = "";
     private JTextField text1;
     private boolean negative;
@@ -19,36 +20,39 @@ public class Display {
     public Display(JTextField text1) {
         this.text1 = text1;
     }
-    
+
     public void displayNumber(int number) {
-        if ( !this.digit.equals("") || number != 0 ) {
+        if (!this.digit.equals("") || number != 0) {
             this.digit += String.valueOf(number);
-            if (negative) {
-                text1.setText("-" + this.digit);
+            if (this.digit.length() < 13) {
+                if (negative) {
+                    text1.setText("-" + this.digit);
+                } else {
+                    text1.setText(this.digit);
+                }
             } else {
-                text1.setText(this.digit);
+                text1.setText("NUMBER TO BIG");
             }
         }
     }
-    
+
     public void deleteDisplay() {
         Calculator calc = new Calculator();
         calc.resetCalc();
         resetDigit();
         text1.setText("0");
     }
-    
+
     public void resetDigit() {
         this.digit = "";
     }
-    
-   /**
-    * 
-    * @param negate 
-    */
-    public void negate ( boolean negate )
-    {
-        if ( !negate ) {
+
+    /**
+     *
+     * @param negate
+     */
+    public void negate(boolean negate) {
+        if (!negate) {
             changeSign();
             this.negative = true;
         } else {
@@ -56,8 +60,8 @@ public class Display {
             this.negative = false;
         }
     }
-    
-    private void changeSign () {
+
+    private void changeSign() {
         int number = Integer.parseInt(text1.getText()) * -1;
         text1.setText(String.valueOf(number));
     }
