@@ -17,18 +17,18 @@ public class Case {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        Case gui = new Case();
-        gui.show(true);
-    }
-    
-    public void show (boolean visible) {
-        if (visible) {
-            GUI gui = new GUI();
-            gui.setVisible(visible);
-        } else {
-            System.out.println("GUI Visible is false. Please set it to true");
+        public static void main(String[] args) {
+            Case gui = new Case();
+            gui.show(true);
         }
-    }    
+
+        public void show (boolean visible) {
+            if (visible) {
+                GUI gui = new GUI();
+                gui.setVisible(visible);
+            } else {
+                System.out.println("GUI Visible is false. Please set it to true");
+            }
+        }    
     
 }
