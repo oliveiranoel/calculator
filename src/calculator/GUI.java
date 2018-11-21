@@ -334,6 +334,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void btn_minusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_minusActionPerformed
         this.calculation(Operator.SUBTRACTION);
+        display.negate(false);
     }//GEN-LAST:event_btn_minusActionPerformed
 
     private void btn_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_0ActionPerformed
@@ -355,6 +356,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void btn_multiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_multiActionPerformed
         this.calculation(Operator.MULTIPLICATION);
+        display.negate(false);
     }//GEN-LAST:event_btn_multiActionPerformed
 
     private void btn_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_6ActionPerformed
@@ -375,6 +377,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void btn_divActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_divActionPerformed
         this.calculation(Operator.DIVISION);
+        display.negate(false);
     }//GEN-LAST:event_btn_divActionPerformed
 
     private void btn_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_7ActionPerformed

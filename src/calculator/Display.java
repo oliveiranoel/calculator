@@ -16,6 +16,7 @@ public class Display {
     private String digit = "";
     private JTextField text1;
     private boolean negative;
+    private String minus = "-";
 
     public Display(JTextField text1) {
         this.text1 = text1;
@@ -26,9 +27,7 @@ public class Display {
             this.digit += String.valueOf(number);
             if (this.digit.length() < 13) {
                 if (negative) {
-                    text1.setText("-" + this.digit);
-                } else {
-                    text1.setText(this.digit);
+                    text1.setText(this.minus + this.digit);
                 }
             } else {
                 text1.setText("NUMBER TO BIG");
@@ -55,6 +54,7 @@ public class Display {
         if (!negate) {
             changeSign();
             this.negative = true;
+            this.minus = "";
         } else {
             changeSign();
             this.negative = false;
