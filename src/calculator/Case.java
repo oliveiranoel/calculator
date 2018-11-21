@@ -19,23 +19,7 @@ public class Case {
      */
     public static void main(String[] args) {
         Case gui = new Case();
-        
         gui.show(true);
-        
-        /*
-        Calculator calculator = new Calculator();
-
-        calculator.setNumber(10, Operator.ADDITION);
-
-        calculator.calculate(3);
-        System.out.println(calculator.returnResult());
-
-        calculator.calculate(4);
-        System.out.println(calculator.returnResult());
-
-        calculator.setoperator(Operator.SUBTRACTION);
-        calculator.calculate(2);
-        System.out.println(calculator.returnResult()); */
     }
     
     public void show (boolean visible) {
