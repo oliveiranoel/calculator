@@ -1,13 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package calculator;
 
 /**
- *
+ * Enum, to choose the Operator for the calculation.
+ * 
  * @author noel.oliveira
+ * @since 25.11.2018
+ * @version 1.0
  */
 public enum Operator {
     ADDITION ( 0 ),

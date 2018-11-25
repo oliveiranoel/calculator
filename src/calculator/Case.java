@@ -1,27 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package calculator;
 
-import java.awt.Color;
-import javax.swing.JFrame;
-
 /**
- *
+ * Main class
+ * 
  * @author noel.oliveira
+ * @since 25.11.18
+ * @version 1.0
  */
 public class Case {
 
-    /**
-     * @param args the command line arguments
-     */
         public static void main(String[] args) {
+            // Starts GUI
             Case gui = new Case();
             gui.show(true);
         }
 
+        /**
+         * Function, to show the GUI.
+         * 
+         * @param visible true if GUI should be opened
+         */
         public void show (boolean visible) {
             if (visible) {
                 GUI gui = new GUI();

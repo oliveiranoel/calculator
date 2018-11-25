@@ -334,7 +334,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void btn_minusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_minusActionPerformed
         this.calculation(Operator.SUBTRACTION);
-        display.negate(false);
+        display.resetSign();
     }//GEN-LAST:event_btn_minusActionPerformed
 
     private void btn_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_0ActionPerformed
@@ -343,7 +343,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void btn_addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_addActionPerformed
         this.calculation(Operator.ADDITION);
-        display.negate(false);
+        display.resetSign();
     }//GEN-LAST:event_btn_addActionPerformed
 
     private void btn_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_3ActionPerformed
@@ -356,7 +356,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void btn_multiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_multiActionPerformed
         this.calculation(Operator.MULTIPLICATION);
-        display.negate(false);
+        display.resetSign();
     }//GEN-LAST:event_btn_multiActionPerformed
 
     private void btn_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_6ActionPerformed
@@ -377,7 +377,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void btn_divActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_divActionPerformed
         this.calculation(Operator.DIVISION);
-        display.negate(false);
+        display.resetSign();
     }//GEN-LAST:event_btn_divActionPerformed
 
     private void btn_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_7ActionPerformed
@@ -401,6 +401,7 @@ public class GUI extends javax.swing.JFrame {
     private void btn_caActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_caActionPerformed
         display.deleteDisplay();
         operatorFlag = true;
+        display.resetSign();
     }//GEN-LAST:event_btn_caActionPerformed
 
     private void btn_powerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_powerActionPerformed
